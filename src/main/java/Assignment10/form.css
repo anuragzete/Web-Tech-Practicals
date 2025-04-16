@@ -1,0 +1,43 @@
+body{
+    background-color: #eee;
+
+}
+form{
+
+    font-size:20px;
+}
+h1{
+    padding:10px;
+    text-align: center;
+    color:red;
+}
+div{
+    padding:20px;
+    background-color:white;
+    width:30%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+p{
+    display:inline-block;
+    width:40%;
+}
+.pc{
+    color:red;
+}
+input[type=submit]{
+    background-color:red;
+    color:white;
+    width:80%;
+    border:none;
+    border-radius:20px;
+    padding:10px;
+    font-weight:bolder;
+    font-size:20px;
+
+    margin-left:10%;
+}
+input[type=submit]:hover{
+    background-color:blue;
+}

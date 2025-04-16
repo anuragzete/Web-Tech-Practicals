@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee>
+        <username>Akash123</username>
+        <password>akash123</password>
+        <firstName>Akash</firstName>
+        <lastName>Mete</lastName>
+        <gender>Male</gender>
+        <email>akashmete129@gmail.com</email>
+        <position>Software Developer</position>
+        <salary>9.5 lpa</salary>
+        <contact>+91 7051794938</contact>
+    </employee>
+    <employee>
+        <username>AlexWest</username>
+        <password>alex123</password>
+        <firstName>Alex</firstName>
+        <lastName>West</lastName>
+        <gender>Female</gender>
+        <email>alex123@gmail.com</email>
+        <position>Software Developer</position>
+        <salary>7.5 lpa</salary>
+        <contact>+91 9335785141</contact>
+    </employee>
+    <employee>
+        <username>BarryAllen</username>
+        <password>barry123</password>
+        <firstName>Barry</firstName>
+        <lastName>Allen</lastName>
+        <gender>Male</gender>
+        <email>barryallen@gmail.com</email>
+        <position>Frontend Developer</position>
+        <salary>7.5 lpa</salary>
+        <contact>+91 7834918230</contact>
+    </employee>
+    <employee>
+        <username>JohnDoe</username>
+        <password>johndoe123</password>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <gender>Male</gender>
+        <email>johndoe@example.com</email>
+        <position>Marketing Manager</position>
+        <salary>12 lpa</salary>
+        <contact>+91 9934671209</contact>
+    </employee>
+    <employee>
+        <username>JaneSmith</username>
+        <password>janesmith456</password>
+        <firstName>Jane</firstName>
+        <lastName>Smith</lastName>
+        <gender>Female</gender>
+        <email>janesmith@example.com</email>
+        <position>Human Resources Manager</position>
+        <salary>10 lpa</salary>
+        <contact>+91 9091235013</contact>
+    </employee>
+    <employee>
+        <username>BobJohnson</username>
+        <password>bob123</password>
+        <firstName>Bob</firstName>
+        <lastName>Johnson</lastName>
+        <gender>Male</gender>
+        <email>bob.johnson@example.com</email>
+        <position>Software Engineer</position>
+        <salary>9 lpa</salary>
+        <contact>+91 7722012983</contact>
+    </employee>
+</employees>

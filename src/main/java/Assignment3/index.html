@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Employee List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Username</th>
+        <th>Password</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Position</th>
+        <th>Salary</th>
+        <th>Contact</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Populate rows from XML data -->
+    </tbody>
+</table>
+<script>
+    fetch('employees.xml')
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(data, 'text/xml');
+            const employees = xml.getElementsByTagName('employee');
+            const tbody = document.querySelector('tbody');
+
+            for (let i = 0; i < employees.length; i++) {
+                const employee = employees[i];
+                const row = document.createElement('tr');
+
+                const username = employee.getElementsByTagName('username')[0]?.textContent || '';
+                const password = employee.getElementsByTagName('password')[0]?.textContent || '';
+                const firstName = employee.getElementsByTagName('firstName')[0]?.textContent || '';
+                const lastName = employee.getElementsByTagName('lastName')[0]?.textContent || '';
+                const gender = employee.getElementsByTagName('gender')[0]?.textContent || '';
+                const email = employee.getElementsByTagName('email')[0]?.textContent || '';
+                const position = employee.getElementsByTagName('position')[0]?.textContent || '';
+                const salary = employee.getElementsByTagName('salary')[0]?.textContent || '';
+                const contact = employee.getElementsByTagName('contact')[0]?.textContent || '';
+
+                const columns = [username, password, firstName, lastName, gender, email, position, salary, contact];
+                columns.forEach(col => {
+                    const cell = document.createElement('td');
+                    cell.textContent = col;
+                    row.appendChild(cell);
+                });
+
+                tbody.appendChild(row);
+            }
+        })
+        .catch(error => console.error('Error fetching or parsing XML:', error));
+</script>
+</body>
+</html>
